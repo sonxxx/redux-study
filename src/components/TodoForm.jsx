@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import { connect } from 'react-redux';
 import useReduxDispatch from '../hooks/useReduxDispatch';
-import { addTodo } from '../redux/actions';
 
 //1) react-redux없이 redux를 react에 연결하는 법
 // export default function TodoForm(){

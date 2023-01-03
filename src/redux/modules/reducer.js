@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import todos from './todos';
+import todos from './todos'
 import filter from './filter';
 import users from './users';
 
@@ -8,6 +8,6 @@ const reducer = combineReducers({
   //reducer를 각각의 property로 지정해서 세팅
   todos: todos,
   filter: filter,
-  users: users,
+  users: users
 });
 export default reducer;

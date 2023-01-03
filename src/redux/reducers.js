@@ -1,4 +1,4 @@
-import { ADD_TODO, COMPLETE_TODO, SHOW_ALL, SHOW_COMPLETE } from './actions';
+import { ADD_TODO, COMPLETE_TODO, SHOW_ALL, SHOW_COMPLETE } from '../actions';
 
 
 // state

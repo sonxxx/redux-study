@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import UserList from '../components/UserList'
-import { getUsersThunk, getUsersPromise } from '../redux/actions';
+import { getUsersThunk, getUsersPromise, getUsersSagaStart } from '../redux/modules/users';
 
 export default function UserListContainer(){
   const users = useSelector((state) => state.users.data);
@@ -35,12 +35,16 @@ export default function UserListContainer(){
   // },[dispatch]);
 
 
+
   // const getUsers = useCallback(() => {
   //   dispatch(getUsersThunk());
   // },[dispatch]);
   const getUsers = useCallback(() => {
-    dispatch(getUsersPromise());
+    dispatch(getUsersSagaStart());
   },[dispatch]);
+  // const getUsers = useCallback(() => {
+  //   dispatch(getUsersPromise());
+  // },[dispatch]);
   
   return <UserList users={users} getUsers={getUsers}/>;
 }

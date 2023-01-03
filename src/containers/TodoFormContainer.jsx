@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import TodoForm from '../components/TodoForm';
-import { addTodo } from '../redux/actions';
+import { addTodo } from '../redux/modules/todos';
 
 //'컨테이너' or '스마트한 컴포넌트'라 한다
 //store와 presentational component를 이어주는 역할
